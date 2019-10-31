@@ -59,7 +59,7 @@
 
             <div class="navbar-nav">
                 {% for item in site.data.navigation.nav %}
-                 <a class="nav-item nav-link color-menu  menu-nav" href="{{ item.url }}">{{ item.title }}<span class="sr-only"></span></a>
+                 <a class="nav-item nav-link color-menu  menu-nav" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}<span class="sr-only"></span></a>
                    {% if item.version == "Modules" %}
                     <div class="nav-item dropdown">
                        
